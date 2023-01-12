@@ -14,5 +14,6 @@ export default class User extends BaseModel {
   @column({columnName:'edad'})
   public edad: number
 
-
+  @column({columnName:'url_foto'})
+  public url_foto: string
 }
