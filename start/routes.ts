@@ -24,5 +24,10 @@ Route.get('/', async () => {
   return { hello: 'world' }
 })
 
+
+
 Route.resource('users', 'UsersController').apiOnly()
 Route.post('cargar_foto/:id', 'UsersController.upload')
+Route.post('login', 'AuthController')
+
+
